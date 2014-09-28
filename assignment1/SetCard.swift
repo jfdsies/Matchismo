@@ -15,6 +15,10 @@ struct SetCard {
         self.shape  = shape
     }
     
+    func content() -> String {
+        return "\(number)\(shape)\(color)"
+    }
+    
     var number = ""
     var color  = ""
     var shape  = ""

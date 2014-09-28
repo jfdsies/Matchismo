@@ -14,6 +14,8 @@
 		97ABB8DE19D7003E00E2B2CF /* SetDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ABB8DD19D7003E00E2B2CF /* SetDeck.swift */; };
 		97ABB8E019D701F000E2B2CF /* PlayingSetCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ABB8DF19D701F000E2B2CF /* PlayingSetCardDeck.swift */; };
 		97ABB8E219D708F600E2B2CF /* SetCardMatchingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97ABB8E119D708F600E2B2CF /* SetCardMatchingGame.swift */; };
+		97C0EC0619D7B18B0009CDCD /* SetCardGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C0EC0519D7B18B0009CDCD /* SetCardGameViewController.swift */; };
+		97C0EC0819D7F1260009CDCD /* AnalyzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C0EC0719D7F1260009CDCD /* AnalyzeViewController.swift */; };
 		97D4F37619C71C41001B4D21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D4F37519C71C41001B4D21 /* AppDelegate.swift */; };
 		97D4F37B19C71C41001B4D21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D4F37919C71C41001B4D21 /* Main.storyboard */; };
 		97D4F37D19C71C41001B4D21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97D4F37C19C71C41001B4D21 /* Images.xcassets */; };
@@ -43,6 +45,8 @@
 		97ABB8DD19D7003E00E2B2CF /* SetDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetDeck.swift; sourceTree = "<group>"; };
 		97ABB8DF19D701F000E2B2CF /* PlayingSetCardDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingSetCardDeck.swift; sourceTree = "<group>"; };
 		97ABB8E119D708F600E2B2CF /* SetCardMatchingGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetCardMatchingGame.swift; sourceTree = "<group>"; };
+		97C0EC0519D7B18B0009CDCD /* SetCardGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetCardGameViewController.swift; sourceTree = "<group>"; };
+		97C0EC0719D7F1260009CDCD /* AnalyzeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzeViewController.swift; sourceTree = "<group>"; };
 		97D4F37019C71C41001B4D21 /* assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D4F37419C71C41001B4D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97D4F37519C71C41001B4D21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,9 +116,10 @@
 				97ABB8D819D6F61100E2B2CF /* modelSet */,
 				97D4F39719C71D49001B4D21 /* model */,
 				97D4F37919C71C41001B4D21 /* Main.storyboard */,
+				97C0EC0519D7B18B0009CDCD /* SetCardGameViewController.swift */,
 				976ECF7819C87FBD00761037 /* CardGameViewController.swift */,
+				97C0EC0719D7F1260009CDCD /* AnalyzeViewController.swift */,
 				97D4F37C19C71C41001B4D21 /* Images.xcassets */,
-				97D4F37E19C71C41001B4D21 /* LaunchScreen.xib */,
 				97D4F37319C71C41001B4D21 /* Supporting Files */,
 			);
 			path = assignment1;
@@ -123,6 +128,7 @@
 		97D4F37319C71C41001B4D21 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				97D4F37E19C71C41001B4D21 /* LaunchScreen.xib */,
 				97D4F37519C71C41001B4D21 /* AppDelegate.swift */,
 				97D4F37419C71C41001B4D21 /* Info.plist */,
 			);
@@ -265,6 +271,8 @@
 				97ABB8E019D701F000E2B2CF /* PlayingSetCardDeck.swift in Sources */,
 				97D4F39F19C73D05001B4D21 /* PlayingCardDeck.swift in Sources */,
 				97D4F37619C71C41001B4D21 /* AppDelegate.swift in Sources */,
+				97C0EC0819D7F1260009CDCD /* AnalyzeViewController.swift in Sources */,
+				97C0EC0619D7B18B0009CDCD /* SetCardGameViewController.swift in Sources */,
 				976ECF7919C87FBD00761037 /* CardGameViewController.swift in Sources */,
 				97ABB8DA19D6FB9B00E2B2CF /* SetCard.swift in Sources */,
 				97D4F39B19C71E31001B4D21 /* Card.swift in Sources */,

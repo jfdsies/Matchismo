@@ -9,7 +9,7 @@
 import Foundation
 
 let SET_MISMATCH_PENALTY = 2
-let SET_MATCH_BOUND = 4
+let SET_MATCH_BOUND = 10
 let SET_COST_TO_CHOOSE = 1
 
 class SetCardMatchingGame {
@@ -29,25 +29,26 @@ class SetCardMatchingGame {
     }
     
     func chooseCardAtIndex(index:Int) {
-        if var card:SetCard = cardAtIndex(index) {
-            if card.isChoose {
+        if var cardIndex:Int = cardAtIndex(index) {
+            if cards[cardIndex].isChoose {
                 cardsIsSelected = [Int]()
-                card.isChoose = false
+                cards[cardIndex].isChoose = false
             } else {
-                card.isChoose = true
+                cards[cardIndex].isChoose = true
                 cardsIsSelected.append(index)
                 var matchScore = 0
                 if cardsIsSelected.count >= 3 {
                     matchScore = playingSetCard.matchSetCard(&cards, index: cardsIsSelected)
+                    if matchScore > 0 {
+                        score += SET_MATCH_BOUND
+                    } else {
+                        score -= SET_MISMATCH_PENALTY
+                    }
                     for i in cardsIsSelected {
                         if matchScore > 0 {
                             cards[i].isChoose = true
-                            cards[i].isMatch = true
-                            score += SET_MATCH_BOUND
                         } else {
                             cards[i].isChoose = false
-                            cards[i].isMatch = false
-                            score -= SET_MISMATCH_PENALTY
                         }
                     }
                     cardsIsSelected = [Int]()
@@ -57,7 +58,7 @@ class SetCardMatchingGame {
         }
     }
     
-    func cardAtIndex(index:Int) -> SetCard? {
-        return (index < cards.count) ? cards[index] : nil
+    func cardAtIndex(index:Int) -> Int? {
+        return (index < cards.count) ? index : nil
     }
 }

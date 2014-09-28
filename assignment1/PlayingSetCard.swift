@@ -9,13 +9,13 @@
 import Foundation
 
 class PlayingSetCard {
-    var numberString = ["1","2","3"]
-    var colorString = ["Blue","Red","Orange"]
-    var shapeString = ["🅰","🅱","🅾"]
+    var numberString = ["1️⃣","2️⃣","3️⃣"]
+    var colorString = ["🚰","🆑","🚼"]
+    var shapeString = ["🌽","🍉","🍋"]
     
     func matchSetCard(inout cards:[SetCard], index:[Int]) -> Int {
         var score = 0
-        if cards.count == 3 {
+        if index.count == 3 {
             var card1 = cards[index[0]]
             var card2 = cards[index[1]]
             var card3 = cards[index[2]]
